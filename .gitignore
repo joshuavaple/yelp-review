@@ -1,1 +1,3 @@
 venv/
+yelp_review.egg-info/
+*.pyc
