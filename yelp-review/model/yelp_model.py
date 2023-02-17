@@ -64,6 +64,6 @@ class YelpLogisticRegression(BaseModel):
     def export_model(self):
         """Exports the custom model's sklearn linear model"""
         output_config = self.config.output.output_path
-        ModelSaving().save_model_with_timestamp(self.model, output_config) 
+        ModelSaving().save_model_with_timestamp(self.vectorizer, self.model, output_config) 
 
         
