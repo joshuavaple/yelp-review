@@ -12,11 +12,12 @@ class ModelSaving(object):
         return now.strftime("%Y%m%d_%H%M%S")
 
     @staticmethod
-    def save_model_with_timestamp(model, output_config):
+    def save_model_with_timestamp(vectorizer, model, output_config):
         filename = ModelSaving.get_current_timestamp() + '_LogReg' + '.pickle'
         filepath = os.path.join(output_config, filename)
-        pickle.dump(model, open(filepath, 'wb'))
-        return print('Saved model to: ', filepath)
+        with open(filepath, 'wb') as outputfile:
+            pickle.dump((vectorizer, model), outputfile)
+        return print('Saved vectorizer and model to pickle file: ', filepath)
 
 if __name__ == '__main__':
     print(ModelSaving.get_current_timestamp())
