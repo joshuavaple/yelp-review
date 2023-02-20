@@ -1,6 +1,6 @@
 """Inferrer class"""
-from utils.config import Config
-from configs.config import CFGLog
+from yelpreview.utils.config import Config
+from yelpreview.configs.config import CFGLog
 import os
 import pickle
 

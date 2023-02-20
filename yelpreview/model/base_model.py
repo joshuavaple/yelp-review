@@ -1,7 +1,7 @@
 """Abstract base model"""
 
 from abc import ABC, abstractmethod
-from utils.config import Config
+from yelpreview.utils.config import Config
 
 class BaseModel(ABC):
     """Abstract Model class that is inherited to all models"""
