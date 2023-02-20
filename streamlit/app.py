@@ -15,18 +15,9 @@ inferrer = Inferrer()
 result = str(inferrer.infer(document = input_document)[0])
 st.write(f"Predicted rating: {result}")
 
-# # write mark-down format
-# st.write("""
-# # Explore different classifiers
-# ## 1. Linear classifiers
-# Linear regression \n
-# Logistic regression
-# ## 2. Tree-based classifiers
-# XGBoost
-# """)
+# whenever an option is selected in the FE, 
+# the var will get assigned the selected value
 
-# # whenever an option is selected in the FE, 
-# # the var will get assigned the selected value
 # st.write(f"Selected trained model: {model_name}")
 # select_box = st.selectbox("Select the sub option", 
 #              ("option 1",
