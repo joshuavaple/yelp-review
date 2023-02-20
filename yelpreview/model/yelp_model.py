@@ -3,9 +3,9 @@
 from sklearn import linear_model
 from datetime import datetime
 from .base_model import BaseModel
-from dataloader.dataloader import DataLoader
-from executor.trainer import LogisticRegressionTrainer
-from utils.postprocessing import ModelSaving
+from yelpreview.dataloader.dataloader import DataLoader
+from yelpreview.executor.trainer import LogisticRegressionTrainer
+from yelpreview.utils.postprocessing import ModelSaving
 
 class YelpLogisticRegression(BaseModel):
     """Logistic regression model"""
