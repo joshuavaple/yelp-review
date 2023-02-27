@@ -1,4 +1,4 @@
-""" main_2.py """
+"""main executing script to train, export and infer"""
 
 from yelpreview.configs.config import CFGLog
 from yelpreview.model.yelp_model import YelpLogisticRegression
