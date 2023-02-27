@@ -25,7 +25,7 @@ CFGLog = {
             "penalty": "l2",
     },
     "output": {
-        "output_path": "../data/exported_models/",
+        "output_path": "./data/exported_models/",
         "model_name": "20230217_152148_LogReg.pickle",
     }
 }

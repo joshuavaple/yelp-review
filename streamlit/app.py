@@ -6,7 +6,7 @@ from yelpreview.executor.inferrer import Inferrer
 config = Config.from_json(CFGLog)
 model_name = config.output.model_name
 
-st.title("Yelp Review Rating Prediction")
+st.title("Yelp Review Rating Prediction - Docker Version")
 input_document = st.text_area(label='Input your text review')
 inferrer = Inferrer()
 
