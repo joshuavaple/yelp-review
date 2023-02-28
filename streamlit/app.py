@@ -6,7 +6,7 @@ from yelpreview.executor.inferrer import Inferrer
 config = Config.from_json(CFGLog)
 model_name = config.output.model_name
 
-st.title("Yelp Review Rating Prediction - Docker Version")
+st.title("Yelp Review Rating Prediction")
 input_document = st.text_area(label='Input your text review')
 inferrer = Inferrer()
 
@@ -14,6 +14,7 @@ inferrer = Inferrer()
 # e.g., by adding another args to the function to input model name
 result = str(inferrer.infer(document = input_document)[0])
 st.write(f"Predicted rating: {result}")
+st.write(f"Model used: {model_name}")
 
 # whenever an option is selected in the FE, 
 # the var will get assigned the selected value
