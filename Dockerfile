@@ -18,8 +18,8 @@ RUN pip3 install -r requirements.txt && \
 
 # The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime. 
 # Your container needs to listen to Streamlit’s (default) port 8501
-EXPOSE 8501
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+# EXPOSE 8501
+# HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
 # v1.0
 # CMD streamlit run --server.port 8080 --server.enableCORS false ./streamlit/app.py
