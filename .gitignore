@@ -2,3 +2,4 @@ venv/
 yelp_review.egg-info/
 *.pyc
 yelpreview.egg-info/
+venv*

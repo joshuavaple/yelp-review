@@ -9,18 +9,18 @@ document = r"Was it worth the for a salad and small pizza Absolutely not Bad ser
 def run():
     """Builds model, loads data, trains and evaluates"""
     # load data and train model
-    mymodel = YelpLogisticRegression(CFGLog)
-    mymodel.load_data()
-    mymodel.build()
-    mymodel.train()
+    # mymodel = YelpLogisticRegression(CFGLog)
+    # mymodel.load_data()
+    # mymodel.build()
+    # mymodel.train()
     # predicts reqsults on test set
-    mymodel.evaluate()
+    # mymodel.evaluate()
     # export to pickle
-    mymodel.export_model()
+    # mymodel.export_model()
 
     # inference
-    # inferrer = Inferrer()
-    # print(inferrer.infer(document))
+    inferrer = Inferrer()
+    print(inferrer.infer(document))
     
 if __name__ == '__main__':
     run()
