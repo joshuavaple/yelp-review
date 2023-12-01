@@ -3,3 +3,4 @@ matplotlib==3.5.0
 scikit-learn==1.0.2
 ipykernel==6.16.0
 streamlit==1.18.1
+altair<5
